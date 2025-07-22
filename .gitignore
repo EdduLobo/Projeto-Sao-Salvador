@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Arquivos de build do Tailwind
+dist/
+
+# Cache do Tailwind (opcional)
+.tailwind-cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema (Linux/macOS/VSCode)
+.DS_Store
+*.swp
+*.swo
+
+# Editor
+.vscode/
+.idea/
