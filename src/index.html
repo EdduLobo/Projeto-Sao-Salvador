@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="../src/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <title>São Salvador</title>
     <style>
@@ -38,20 +41,68 @@
   <body>
     <header>
       <nav class="w-full flex justify-end p-4 fixed top-0 left-0 z-50">
-        <button id="hamburguer" onclick="toggleMenu()" class="w-16 h-16 rounded-full bg-neutral-300 hover:bg-neutral-400 shadow-md flex items-center justify-center">
+        <button
+          id="hamburguer"
+          onclick="toggleMenu()"
+          class="w-16 h-16 rounded-full bg-neutral-300 hover:bg-neutral-400 shadow-md flex items-center justify-center"
+        >
           <div id="icon" class="relative w-6 h-6 transition-all duration-300">
-            <span class="bar absolute top-1/2 left-0 w-6 h-1 bg-green-700 transform -translate-y-1/2 transition-all duration-300"></span>
-            <span class="bar absolute top-1/2 left-0 w-6 h-1 bg-green-700 transform -translate-y-1/2 transition-all duration-300"></span>
-            <span class="bar absolute top-1/2 left-0 w-6 h-1 bg-green-700 transform -translate-y-1/2 transition-all duration-300"></span>
+            <span
+              class="bar absolute top-1/2 left-0 w-6 h-1 bg-green-700 transform -translate-y-1/2 transition-all duration-300"
+            ></span>
+            <span
+              class="bar absolute top-1/2 left-0 w-6 h-1 bg-green-700 transform -translate-y-1/2 transition-all duration-300"
+            ></span>
+            <span
+              class="bar absolute top-1/2 left-0 w-6 h-1 bg-green-700 transform -translate-y-1/2 transition-all duration-300"
+            ></span>
 
-            <div id="menu" class="hidden opacity-0 absolute top-[5.5rem] left-1/2 -translate-x-1/2 flex flex-col items-center gap-transition-all duration-300">
-              <a href="#hero_section" class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition" title="Início"><i class="fa-solid fa-star text-yellow-300"></i></a>
-              <a href="#sobre" class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4" title="Sobre o projeto"><i class="fa-solid fa-compass text-yellow-300"></i></a>
-              <a href="#aulas" class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4" title="Aulas e treinos"><i class="fa-solid fa-running   text-yellow-300"></i></a>
-              <a href="#mestres" class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4" title="mestres e instrutores"><i class="fa-solid fa-user-ninja text-yellow-300"></i></a>
-              <a href="#galeria" class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4" title="galeria"><i class="fa-solid fa-images text-yellow-300"></i></a>
-              <a href="#depoimentos" class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4" title="depoimentos"><i class="fa-solid fa-comment text-yellow-300"></i></a>
-              <a href="#contato" class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4" title="Contato"><i class="fa-solid fa-envelope text-yellow-300"></i></a>
+            <div
+              id="menu"
+              class="hidden opacity-0 absolute top-[5.5rem] left-1/2 -translate-x-1/2 flex flex-col items-center gap-transition-all duration-300"
+            >
+              <a
+                href="#hero_section"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition"
+                title="Início"
+                ><i class="fa-solid fa-star text-yellow-300"></i
+              ></a>
+              <a
+                href="#sobre"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4"
+                title="Sobre o projeto"
+                ><i class="fa-solid fa-compass text-yellow-300"></i
+              ></a>
+              <a
+                href="#aulas"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4"
+                title="Aulas e treinos"
+                ><i class="fa-solid fa-running text-yellow-300"></i
+              ></a>
+              <a
+                href="#mestres"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4"
+                title="mestres e instrutores"
+                ><i class="fa-solid fa-user-ninja text-yellow-300"></i
+              ></a>
+              <a
+                href="#galeria"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4"
+                title="galeria"
+                ><i class="fa-solid fa-images text-yellow-300"></i
+              ></a>
+              <a
+                href="#depoimentos"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4"
+                title="depoimentos"
+                ><i class="fa-solid fa-comment text-yellow-300"></i
+              ></a>
+              <a
+                href="#contato"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4"
+                title="Contato"
+                ><i class="fa-solid fa-envelope text-yellow-300"></i
+              ></a>
             </div>
           </div>
         </button>
@@ -59,23 +110,48 @@
     </header>
 
     <main>
-      <img src="../img/icon.png" alt="" class="absolute top-5 left-5 w-20 h-20" />
+      <img
+        src="../img/icon.png"
+        alt=""
+        class="absolute top-5 left-5 w-20 h-20"
+      />
 
-      <section id="hero_section" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('../img/Hero_Section.jpg');">
+      <section
+        id="hero_section"
+        class="h-screen flex items-center justify-center bg-cover bg-center"
+        style="background-image: url('../img/Hero_Section.jpg')"
+      >
         <img src="../img/logo.jpg" alt="" />
-        <div class="flex flex-col items-center max-w-sm w-full bg-neutral-800/60 p-8 rounded-3xl">
-          <h1 class="text-4xl font-bold text-white text-center fonts-Ubuntu"> Quem nós somos </h1>
-          <h2 class="text-xl font-bold text-white text-center"> Perguntamos as crianças: <br /> que respondem com Orgulho. </h2>
+        <div
+          class="flex flex-col items-center max-w-sm w-full bg-neutral-800/60 p-8 rounded-3xl"
+        >
+          <h1 class="text-4xl font-bold text-white text-center fonts-Ubuntu">
+            Quem nós somos
+          </h1>
+          <h2 class="text-xl font-bold text-white text-center">
+            Perguntamos as crianças: <br />
+            que respondem com Orgulho.
+          </h2>
           <h1 class="text-4xl font-bold text-white">"São Salvador"</h1>
-          <a href="#Contato" class="bg-green-800 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-3xl mt-4">Junte-se a nós</a>
+          <a
+            href="#Contato"
+            class="bg-green-800 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-3xl mt-4"
+            >Junte-se a nós</a
+          >
         </div>
       </section>
 
       <section id="sobre" class="neutral-300 py-12 px-4">
-        <h1 class="text-4xl md:text-3xl font-bold text-center text-blue-700 mt-6"> Sobre o projeto</h1>
+        <h1
+          class="text-4xl md:text-3xl font-bold text-center text-blue-700 mt-6"
+        >
+          Sobre o projeto
+        </h1>
         <div class="grid md:grid-cols-2 gap-0 max-w-6xl mt-4 mx-auto">
-          <div class="bg-green-800 text-white p-6 space-y-4 flex flex-col justify-between rounded-l-xl text-lg">
-            <p style="text-indent: 2em;">
+          <div
+            class="bg-green-800 text-white p-6 space-y-4 flex flex-col justify-between rounded-l-xl text-lg"
+          >
+            <p style="text-indent: 2em">
               Tudo começou em um dia qualquer, quando Kira e eu, Padeiro,
               decidimos treinar capoeira na pracinha do bairro Morada da Barra.
               Durante o treino, algumas crianças se sentiram atraídas pelos
@@ -83,7 +159,7 @@
               perguntou como se fazia a armada voadora, e nós mostramos o passo
               a passo com alegria.
             </p>
-            <p style="text-indent: 2em;">
+            <p style="text-indent: 2em">
               A partir desse momento, elas seguiram treinando conosco até o fim
               da noite. Antes de irem embora, uma das crianças perguntou quando
               seria o próximo treino. Ao olhar para Kira, decidimos ali mesmo:
@@ -92,7 +168,7 @@
               Morada da Barra. Hoje, levamos capoeira, cultura e movimento às
               crianças, fortalecendo laços de amizade, respeito e pertencimento.
             </p>
-            <p style="text-indent: 2em;">
+            <p style="text-indent: 2em">
               Shayane Rose (“Kira”) e eu, Harrison Ramos Passos (“Padeiro”),
               fazemos parte da Associação há alguns anos e recentemente
               avançamos em nossas graduações. Nossos treinos e aprendizados
@@ -100,27 +176,98 @@
               Cariacica, sob a orientação do Contra-Mestre Mosquito Prateado,
               com o apoio dos Mestres Zé Branco e Buiu.
             </p>
-            <h2 class="text-lg font-bold text-yellow-300"> “Nós temos dois bolsos: um bom e um rasgado. Às coisas ruins da vida, devemos colocar no bolso rasgado. As boas, guardamos no bolso bom.”</h2>
-            <h3 class="font-bold text-right text-yellow-300">"Mestre Zé Branco"</h3>
+            <h2 class="text-lg font-bold text-yellow-300">
+              “Nós temos dois bolsos: um bom e um rasgado. Às coisas ruins da
+              vida, devemos colocar no bolso rasgado. As boas, guardamos no
+              bolso bom.”
+            </h2>
+            <h3 class="font-bold text-right text-yellow-300">
+              "Mestre Zé Branco"
+            </h3>
           </div>
 
-          <img src="../img/Sobre_o_Projeto.jpg" alt="crianças em fila esperando a sua vez para executar o movimento" class="w-full h-full object-cover rounded-tr-xl rounded-br-xl"/>
+          <img
+            src="../img/Sobre_o_Projeto.jpg"
+            alt="crianças em fila esperando a sua vez para executar o movimento"
+            class="w-full h-full object-cover rounded-tr-xl rounded-br-xl"
+          />
+        </div>
+      </section>
+
+      <!-- Sessão dos Mestres e Instrutores -->
+      <section id="mestres" class="bg-neutral-300 py-12 px-4">
+        <h1
+          class="text-4xl md:text-3xl font-bold text-center text-blue-700 mt-6"
+        >
+          Mestres e Instrutores
+        </h1>
+        <div class="flex flex-col gap-4 max-w-6xl mt-4 mx-auto">
+          <div class="bg-green-800 text-white p-6 rounded-xl space-y-4">
+            <h2 class="text-xl font-bold">Mestre Zé Branco</h2>
+            <p>
+              Mestre Zé Branco é um dos maiores nomes da capoeira no Espírito
+              Santo, com uma carreira repleta de conquistas e reconhecimento.
+              Ele é conhecido por sua habilidade excepcional, dedicação ao
+              ensino e compromisso com a preservação da cultura capoeirística.
+            </p>
+          </div>
+
+          <div class="bg-green-800 text-white p-6 rounded-xl space-y-4">
+            <h2 class="text-xl font-bold">Contra-Mestre Mosquito Prateado</h2>
+            <p>
+              Contra-Mestre Mosquito Prateado é um instrutor renomado, com uma
+              vasta experiência na capoeira. Ele é conhecido por seu estilo
+              único de ensino e por inspirar seus alunos a alcançarem seus
+              objetivos na arte da capoeira.
+            </p>
+          </div>
+
+          <div class="bg-green-800 text-white p-6 rounded-xl space-y-4">
+            <h2 class="text-xl font-bold">Instrutor Padeiro</h2>
+            <p>
+              Instrutor Padeiro é um dos fundadores do núcleo São Salvador,
+              trazendo sua paixão pela capoeira e seu compromisso com o ensino
+              para as crianças do bairro Morada da Barra.
+            </p>
+          </div>
+
+          <div class="bg-green-800 text-white p-6 rounded-xl space-y-4">
+            <h2 class="text-xl font-bold">Instrutora Kira</h2>
+            <p>
+              Instrutora Kira é uma das fundadoras do núcleo São Salvador,
+              trazendo sua energia contagiante e amor pela capoeira para as
+              aulas, inspirando as crianças a se apaixonarem pela arte.
+            </p>
+          </div>
         </div>
       </section>
 
       <section id="contato" class="bg-green-800 py-12 px-4">
-        <h1 class="text-4xl md:text-3xl font-bold text-center text-white">Contato</h1>
+        <h1 class="text-4xl md:text-3xl font-bold text-center text-white">
+          Contato
+        </h1>
 
-        <div class="bg-green-800 max-w-6xl mt-8 mx-auto rounded-3xl p-6 md:grid md:grid-cols-2 gap-4 items-center">
+        <div
+          class="bg-green-800 max-w-6xl mt-8 mx-auto rounded-3xl p-6 md:grid md:grid-cols-2 gap-4 items-center"
+        >
           <div class="col-span-2 mb-6">
-            <h2 class="text-2xl font-bold text-white text-center"> "Fale com a gente, junte-se ao time ou tire suas dúvidas.<br /> Estamos aqui para ajudar!" </h2>
+            <h2 class="text-2xl font-bold text-white text-center">
+              "Fale com a gente, junte-se ao time ou tire suas dúvidas.<br />
+              Estamos aqui para ajudar!"
+            </h2>
           </div>
 
           <div class="flex justify-center">
-            <img src="../img/team.jpeg" alt="time atual" class="w-full max-w-md rounded-xl"/>
+            <img
+              src="../img/team.jpeg"
+              alt="time atual"
+              class="w-full max-w-md rounded-xl"
+            />
           </div>
 
-          <div class="flex flex-col items-center justify-center text-center space-y-6">
+          <div
+            class="flex flex-col items-center justify-center text-center space-y-6"
+          >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.4368997395436!2d-40.3662302!3d-20.431856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb84090c0e28f51%3A0xb653b7adf774213d!2sR.%20Treze%20de%20Maio%2C%20352%20-%20Morada%20da%20Barra%2C%20Vila%20Velha%20-%20ES%2C%2029126-995!5e0!3m2!1spt-BR!2sbr!4v1721920300000!5m2!1spt-BR!2sbr"
               class="w-[90%] max-w-md h-[510px] rounded-xl shadow-lg"
@@ -131,16 +278,36 @@
             ></iframe>
 
             <div class="flex flex-wrap justify-center gap-4">
-              <a href="https://www.instagram.com/saosalvadormoradadabarra" target="_blank" class="text-white font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl"> @São Salvador </a>
-              <a href="https://wa.me/5527998207182?text=Ola!%20eu%20gostaria%20de%20participar%20do%20São%20Salvador%20Morada%20da%20Barra" class="text-white font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl"> Kira </a>
-              <a href="https://wa.me/5527998207182 text=Ola!%20eu%20gostaria%20de%20participar%20do%20São%20Salvador%20Morada%20da%20Barra" class="text-white font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl"> Padeiro </a>
+              <a
+                href="https://www.instagram.com/saosalvadormoradadabarra"
+                target="_blank"
+                class="text-white font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl"
+              >
+                @São Salvador
+              </a>
+              <a
+                href="https://wa.me/5527998207182?text=Ola!%20eu%20gostaria%20de%20participar%20do%20São%20Salvador%20Morada%20da%20Barra"
+                class="text-white font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl"
+              >
+                Kira
+              </a>
+              <a
+                href="https://wa.me/5527998207182 text=Ola!%20eu%20gostaria%20de%20participar%20do%20São%20Salvador%20Morada%20da%20Barra"
+                class="text-white font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl"
+              >
+                Padeiro
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <footer class="bg-blue-700 py-3 px-4 text-white text-center font-bold w-full">
-        <h1>© 2025 | São Salvador Morada da Barra | Todos os direitos reservados.</h1>
+      <footer
+        class="bg-blue-700 py-3 px-4 text-white text-center font-bold w-full"
+      >
+        <h1>
+          © 2025 | São Salvador Morada da Barra | Todos os direitos reservados.
+        </h1>
       </footer>
     </main>
 
