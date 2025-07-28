@@ -12,8 +12,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <title>São Salvador</title>
     <style>
+      .stroke {
+        -webkit-text-stroke: 1px #1d4ed8; /* vermelho */
+        text-stroke: 11px #1d4ed8;
+      }
       /* Normal (hamburguer) */
       #icon .bar:nth-child(1) {
         transform: translateY(-12px);
@@ -59,7 +68,7 @@
 
             <div
               id="menu"
-              class="hidden opacity-0 absolute top-[5.5rem] left-1/2 -translate-x-1/2 flex flex-col items-center gap-transition-all duration-300"
+              class="hidden opacity-0 absolute top-[5.5rem] left-1/2 -translate-x-1/2 flex-col items-center gap-4 transition-all duration-300"
             >
               <a
                 href="#hero_section"
@@ -125,7 +134,7 @@
         <div
           class="flex flex-col items-center max-w-sm w-full bg-neutral-800/60 p-8 rounded-3xl"
         >
-          <h1 class="text-4xl font-bold text-white text-center fonts-Ubuntu">
+          <h1 class="class= text-4xl font-bold text-white text-center stroke">
             Quem nós somos
           </h1>
           <h2 class="text-xl font-bold text-white text-center">
@@ -134,14 +143,14 @@
           </h2>
           <h1 class="text-4xl font-bold text-white">"São Salvador"</h1>
           <a
-            href="#Contato"
+            href="#contato"
             class="bg-green-800 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-3xl mt-4"
             >Junte-se a nós</a
           >
         </div>
       </section>
 
-      <section id="sobre" class="neutral-300 py-12 px-4">
+      <section id="sobre" class="bg-neutral-300 py-12 px-4">
         <h1
           class="text-4xl md:text-3xl font-bold text-center text-blue-700 mt-6"
         >
@@ -194,7 +203,7 @@
         </div>
       </section>
 
-      <!-- Sessão dos Mestres e Instrutores -->
+      <!-- Section Mestres e Instrutores -->
       <section id="mestres" class="bg-neutral-300 py-12 px-4">
         <h1
           class="text-4xl md:text-3xl font-bold text-center text-blue-700 mt-6"
@@ -242,6 +251,72 @@
         </div>
       </section>
 
+      <!-- Section Carrossel -->
+      <section id="depoimentos" class="bg-neutral-300 py-12 px-4">
+        <h1
+          class="text-4xl md:text-3xl font-bold text-center text-blue-700 mt-6 mb-6"
+        >
+          Depoimentos
+        </h1>
+        <!-- procura um elemento com a classe .swiper e aplica a lógica de carrossel nele -->
+        <div class="swiper max-w-7xl mx-auto">
+          <!-- Dentro dele, o swiper-wrapper é o contêiner dos slides -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="bg-green-800 text-white p-6 rounded-xl space-y-4">
+                <p class="text-center font-medium">
+                  Ótimo serviço, recomendo muito!
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-green-800 text-white p-6 rounded-xl space-y-4">
+                <p class="text-center font-medium">
+                  A equipe foi super atenciosa e prestativa.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-green-800 text-white p-6 rounded-xl space-y-4">
+                <p class="text-center font-medium">
+                  Adorei a experiência, voltarei com certeza.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-green-800 text-white p-6 rounded-xl space-y-4">
+                <p class="text-center font-medium">
+                  Serviço rápido e de qualidade!
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-green-800 text-white p-6 rounded-xl space-y-4">
+                <p class="text-center font-medium">
+                  Melhor atendimento que já tive.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-green-800 text-white p-6 rounded-xl space-y-4">
+                <p class="text-center font-medium">
+                  Tudo perfeito, do início ao fim.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-green-800 text-white p-6 rounded-xl space-y-4">
+                <p class="text-center font-medium">
+                  Recomendo a todos, experiência incrível.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section contato -->
+
       <section id="contato" class="bg-green-800 py-12 px-4">
         <h1 class="text-4xl md:text-3xl font-bold text-center text-white">
           Contato
@@ -281,19 +356,19 @@
               <a
                 href="https://www.instagram.com/saosalvadormoradadabarra"
                 target="_blank"
-                class="text-white font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl"
+                class="font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl"
               >
                 @São Salvador
               </a>
               <a
                 href="https://wa.me/5527998207182?text=Ola!%20eu%20gostaria%20de%20participar%20do%20São%20Salvador%20Morada%20da%20Barra"
-                class="text-white font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl"
+                class="font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl"
               >
                 Kira
               </a>
               <a
                 href="https://wa.me/5527998207182 text=Ola!%20eu%20gostaria%20de%20participar%20do%20São%20Salvador%20Morada%20da%20Barra"
-                class="text-white font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl"
+                class="font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl"
               >
                 Padeiro
               </a>
@@ -310,6 +385,24 @@
         </h1>
       </footer>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- O script new Swiper() configura quantos slides aparecem, o espaçamento, autoplay, loop e interações -->
+    <script>
+      new Swiper(".swiper", {
+        slidesPerView: 3,
+        spaceBetween: 24,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: false,
+        },
+        allowTouchMove: true,
+      });
+    </script>
 
     <script src="../src/js/script.js"></script>
   </body>

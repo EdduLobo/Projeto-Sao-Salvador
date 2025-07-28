@@ -1,3 +1,4 @@
+// navegation menu toggle functionality
 function toggleMenu() {
   const icon = document.getElementById("icon");
   const menu = document.getElementById("menu");
