@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+      .stroke {
+        -webkit-text-stroke: 1px #1d4ed8; /* vermelho */
+        text-stroke: 11px #1d4ed8;
+      }
+      /* Normal (hamburguer) */
+      #icon .bar:nth-child(1) {
+        transform: translateY(-12px);
+      }
+      #icon .bar:nth-child(2) {
+        transform: translateY(0);
+      }
+      #icon .bar:nth-child(3) {
+        transform: translateY(12px);
+      }
+
+      /* Quando aberto (vira X) */
+      #icon.open .bar:nth-child(1) {
+        transform: rotate(45deg);
+      }
+      #icon.open .bar:nth-child(2) {
+        opacity: 0;
+      }
+      #icon.open .bar:nth-child(3) {
+        transform: rotate(-45deg);
+      }

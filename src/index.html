@@ -7,110 +7,64 @@
     <link rel="stylesheet" href="../src/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>São Salvador</title>
-    <style>
-      .stroke {
-        -webkit-text-stroke: 1px #1d4ed8; /* vermelho */
-        text-stroke: 11px #1d4ed8;
-      }
-      /* Normal (hamburguer) */
-      #icon .bar:nth-child(1) {
-        transform: translateY(-12px);
-      }
-      #icon .bar:nth-child(2) {
-        transform: translateY(0);
-      }
-      #icon .bar:nth-child(3) {
-        transform: translateY(12px);
-      }
-
-      /* Quando aberto (vira X) */
-      #icon.open .bar:nth-child(1) {
-        transform: rotate(45deg);
-      }
-      #icon.open .bar:nth-child(2) {
-        opacity: 0;
-      }
-      #icon.open .bar:nth-child(3) {
-        transform: rotate(-45deg);
-      }
-    </style>
   </head>
-
   <body>
     <header>
       <nav class="w-full flex justify-end p-4 fixed top-0 left-0 z-50">
         <button
           id="hamburguer"
           onclick="toggleMenu()"
-          class="w-16 h-16 rounded-full bg-neutral-300 hover:bg-neutral-400 shadow-md flex items-center justify-center"
-        >
+          class="w-16 h-16 rounded-full bg-yellow-400 hover:bg-yellow-300 shadow-md flex items-center justify-center">
           <div id="icon" class="relative w-6 h-6 transition-all duration-300">
-            <span
-              class="bar absolute top-1/2 left-0 w-6 h-1 bg-green-700 transform -translate-y-1/2 transition-all duration-300"
-            ></span>
-            <span
-              class="bar absolute top-1/2 left-0 w-6 h-1 bg-green-700 transform -translate-y-1/2 transition-all duration-300"
-            ></span>
-            <span
-              class="bar absolute top-1/2 left-0 w-6 h-1 bg-green-700 transform -translate-y-1/2 transition-all duration-300"
-            ></span>
+            <span class="bar absolute top-1/2 left-0 w-6 h-1 bg-green-700 transform -translate-y-1/2 transition-all duration-300"></span> 
+            <span class="bar absolute top-1/2 left-0 w-6 h-1 bg-green-700 transform -translate-y-1/2 transition-all duration-300"></span>
+            <span class="bar absolute top-1/2 left-0 w-6 h-1 bg-green-700 transform -translate-y-1/2 transition-all duration-300"></span>
 
-            <div
-              id="menu"
-              class="hidden opacity-0 absolute top-[5.5rem] left-1/2 -translate-x-1/2 flex-col items-center gap-4 transition-all duration-300"
-            >
+            <div id="menu" class="hidden opacity-0 absolute top-[5.5rem] left-1/2 -translate-x-1/2 flex-col items-center gap-4 transition-all duration-300">
               <a
                 href="#hero_section"
-                class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-yellow-400 hover:bg-neutral-400 transition"
                 title="Início"
-                ><i class="fa-solid fa-star text-yellow-300"></i
+                ><i class="fa-solid fa-star text-green-800"></i
               ></a>
               <a
                 href="#sobre"
-                class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-yellow-400 hover:bg-neutral-400 transition mt-4"
                 title="Sobre o projeto"
-                ><i class="fa-solid fa-compass text-yellow-300"></i
+                ><i class="fa-solid fa-compass text-green-800"></i
               ></a>
               <a
                 href="#aulas"
-                class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-yellow-400 hover:bg-neutral-400 transition mt-4"
                 title="Aulas e treinos"
-                ><i class="fa-solid fa-running text-yellow-300"></i
+                ><i class="fa-solid fa-running text-green-800"></i
               ></a>
               <a
                 href="#mestres"
-                class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-yellow-400 hover:bg-neutral-400 transition mt-4"
                 title="mestres e instrutores"
-                ><i class="fa-solid fa-user-ninja text-yellow-300"></i
+                ><i class="fa-solid fa-user-ninja text-green-800"></i
               ></a>
               <a
                 href="#galeria"
-                class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-yellow-400 hover:bg-neutral-400 transition mt-4"
                 title="galeria"
-                ><i class="fa-solid fa-images text-yellow-300"></i
+                ><i class="fa-solid fa-images text-green-800"></i
               ></a>
               <a
                 href="#depoimentos"
-                class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-yellow-400 hover:bg-neutral-400 transition mt-4"
                 title="depoimentos"
-                ><i class="fa-solid fa-comment text-yellow-300"></i
+                ><i class="fa-solid fa-comment text-green-800"></i
               ></a>
               <a
                 href="#contato"
-                class="w-10 h-10 flex items-center justify-center rounded-full bg-neutral-300 hover:bg-neutral-400 transition mt-4"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-yellow-400 hover:bg-neutral-400 transition mt-4"
                 title="Contato"
-                ><i class="fa-solid fa-envelope text-yellow-300"></i
+                ><i class="fa-solid fa-envelope text-green-800"></i
               ></a>
             </div>
           </div>
@@ -120,11 +74,8 @@
 
     <main>
       <img
-        src="../img/icon.png"
-        alt=""
-        class="absolute top-5 left-5 w-20 h-20"
-      />
-
+        src="../img/icon.png" alt="logosaosalvadormoradadabarra" class="absolute top-5 left-5 w-20 h-20"/>
+      <!-- Section hero -->
       <section
         id="hero_section"
         class="h-screen flex items-center justify-center bg-cover bg-center"
@@ -144,12 +95,12 @@
           <h1 class="text-4xl font-bold text-white">"São Salvador"</h1>
           <a
             href="#contato"
-            class="bg-green-800 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-3xl mt-4"
+            class="bg-green-800 hover: bg-green-600 text-white font-bold py-2 px-4 rounded-3xl mt-4"
             >Junte-se a nós</a
           >
         </div>
       </section>
-
+      <!-- Section sobre -->
       <section id="sobre" class="bg-neutral-300 py-12 px-4">
         <h1
           class="text-4xl md:text-3xl font-bold text-center text-blue-700 mt-6"
@@ -251,7 +202,7 @@
         </div>
       </section>
 
-      <!-- Section Carrossel -->
+      <!-- Section Depoimentos -->
       <section id="depoimentos" class="bg-neutral-300 py-12 px-4">
         <h1
           class="text-4xl md:text-3xl font-bold text-center text-blue-700 mt-6 mb-6"
@@ -336,7 +287,7 @@
             <img
               src="../img/team.jpeg"
               alt="time atual"
-              class="w-full max-w-md rounded-xl"
+              class="w-full max-w-md rounded-xl shadow-lg"
             />
           </div>
 
@@ -356,19 +307,19 @@
               <a
                 href="https://www.instagram.com/saosalvadormoradadabarra"
                 target="_blank"
-                class="font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl"
+                class="font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl shadow-md"
               >
                 @São Salvador
               </a>
               <a
                 href="https://wa.me/5527998207182?text=Ola!%20eu%20gostaria%20de%20participar%20do%20São%20Salvador%20Morada%20da%20Barra"
-                class="font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl"
+                class="font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl shadow-md"
               >
                 Kira
               </a>
               <a
                 href="https://wa.me/5527998207182 text=Ola!%20eu%20gostaria%20de%20participar%20do%20São%20Salvador%20Morada%20da%20Barra"
-                class="font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl"
+                class="font-bold bg-yellow-400 hover:bg-yellow-300 py-2 px-4 rounded-3xl shadow-md"
               >
                 Padeiro
               </a>
@@ -378,7 +329,7 @@
       </section>
 
       <footer
-        class="bg-blue-700 py-3 px-4 text-white text-center font-bold w-full"
+        class="bg-blue-700 py-3 px-4 text-white text-center font-bold w-full shadow-lg"
       >
         <h1>
           © 2025 | São Salvador Morada da Barra | Todos os direitos reservados.
@@ -387,8 +338,6 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <!-- O script new Swiper() configura quantos slides aparecem, o espaçamento, autoplay, loop e interações -->
     <script>
       new Swiper(".swiper", {
