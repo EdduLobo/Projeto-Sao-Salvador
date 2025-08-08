@@ -18,54 +18,40 @@ function toggleMenu() {
   }
 }
 // accordion
- let state = 0;
-
-  function setActive(next) {
-    const p0 = document.getElementById("panel-0");
-    const p1 = document.getElementById("panel-1");
-    const p2 = document.getElementById("panel-2");
-
-    // Reset
-    p0.classList.remove("w-1/3", "w-1/4");
-    p1.classList.remove("flex-1", "w-1/4");
-    p2.classList.remove("translate-x-0");
-
-    // Estado 1: infantil + iniciante
-    if (next === 1) {
-      p0.classList.replace("flex-1", "w-1/3");
-      p1.classList.replace("w-0", "flex-1");
-    }
-
-    // Estado 2: avança pro avançado
-    else if (next === 2) {
-      p0.classList.replace("w-1/3", "w-1/4");
-      p1.classList.replace("flex-1", "w-1/4");
-      p2.classList.remove("translate-x-full");
-      p2.classList.add("translate-x-0");
-    }
-
-    // Estado 0: volta pro infantil
-    else if (next === 0) {
-      p0.classList.replace("w-1/4", "flex-1");
-      p1.classList.replace("w-1/4", "w-0");
-      p2.classList.remove("translate-x-0");
-      p2.classList.add("translate-x-full");
-    }
-
-    state = next;
+  function setActive(index) {
+    const panels = document.querySelectorAll('#accordion .panel');
+    panels.forEach((panel, i) => {
+      if (i === index) {
+        panel.classList.add('flex-1', 'active');
+        panel.classList.remove('w-[4%]');
+      } else {
+        panel.classList.remove('flex-1', 'active');
+        panel.classList.add('w-[4%]');
+      }
+    });
   }
+
+  // Inicializa com o primeiro ativo
+  setActive(0);
 
 // Galeria
 
   const miniaturas = document.querySelectorAll('.miniatura');
-  const imagemPrincipal = document.getElementById('imagem-principal');
+  const imagemPrincipal = document.querySelector('.imagem-principal');
+  const legenda = document.querySelector('.legenda');
 
-  miniaturas.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      imagemPrincipal.src = btn.querySelector('img').src;
+  miniaturas.forEach((miniatura) => {
+    miniatura.addEventListener('click', () => {
+      const novaSrc = miniatura.getAttribute('data-img');
+      imagemPrincipal.src = novaSrc;
 
-      miniaturas.forEach(m => m.classList.remove('border-yellow-400', 'shadow-md'));
-      btn.classList.add('border-yellow-400', 'shadow-md');
+      const nomeArquivo = novaSrc.split('/').pop();
+      legenda.textContent = nomeArquivo;
+
+      miniaturas.forEach(btn => btn.classList.remove('border-[3px]', 'border-yellow-400'));
+      miniatura.classList.add('border-[3px]', 'border-yellow-400');
     });
   });
+
+
 
